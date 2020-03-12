@@ -1,0 +1,42 @@
+<script type="text/javascript" src="../../js/app.js"></script>
+<script type="text/javascript" src="../../angular/angular.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-animate.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-route.min.js"></script>
+<script type="text/javascript" src="../../js/ui-bootstrap-tpls-2.5.0.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+<div ng-app="index" ng-controller="soldeController" ng-init="init()" style="text-align: center">
+
+    <div class="panel-primary">
+        <div class="alert alert-success">
+            <strong>Solde</strong>
+        </div>
+        <div style="width: 50%">
+            <div class="form-group">
+                <label>Envoi: </label>
+                <span style="margin-left: 10px;height: 20px; float: right; font-weight: bold">{{envoi}}</span>
+
+            </div>
+            <div class="form-group">
+                <label>Paiement : </label>
+                <span style="margin-left: 10px;height: 20px;; float: right; font-weight: bold">{{paiment}}</span>
+            </div>
+            <div class="form-group">
+                <label>Versement: </label>
+                <span style="margin-left: 10px;height: 20px;; float: right; font-weight: bold">{{versement}}</span>
+            </div>
+            <div class="form-group">
+                <label>Rembourssment: </label>
+                <span style="margin-left: 10px;height: 20px;; float: right; font-weight: bold">{{remboursement}}</span>
+            </div>
+            <div class="form-group">
+                <label>Solde: </label>
+                <span style="margin-left: 10px;height: 20px;; float: right; font-weight: bold">{{envoi-paiment-versement-remboursement}}</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>

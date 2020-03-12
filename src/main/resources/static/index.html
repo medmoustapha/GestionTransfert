@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nom Societe</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+ <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="angular/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <!--<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>-->
+    <script src="script.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-2.5.0.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+
+</head>
+<body >
+<div ng-app="index" ng-controller="indexController">
+    <div class="container">
+        <div class="col-12">
+            <div class="panel panel-default spacer">
+                <div class="panel-heading">
+                    <a href="#!/envoi">
+                        <button class="btn btn-primary" >Envoi</button>
+                    </a>
+                    <a href="#!/paiment">
+                        <button class="btn btn-primary">Paiment</button>
+                    </a>
+                    <a href="#!/versement">
+                        <button class="btn btn-primary">Versement</button>
+                    </a>
+                    <a href="#!/remboursement">
+                        <button class="btn btn-primary">Remboursement</button>
+                    </a>
+                    <a href="#!/vendeur">
+                        <button class="btn btn-primary">Vendeur</button>
+                    </a>
+                    <a href="#!/service">
+                        <button class="btn btn-primary">Service</button>
+                    </a>
+                    <a href="#!/solde">
+                        <button class="btn btn-primary">Solde</button>
+                    </a>
+                </div>
+                <div class="panel-body" style="text-align: left">
+                        <div class="col-12" >
+                            <div ng-view></div>
+                        </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <!-- <div  class="fa-align-center" >&lt;!&ndash;[ngStyle]="{'background' : 'url(src/assets/gedPrincipal.jpg)'}"&ndash;&gt;
+        <div class="card card-container">
+            <div class="panel-primary">
+                &lt;!&ndash;<div class="alert alert-danger" *ngIf="mode==1" >
+                    <strong>Bad credentials ...</strong>
+                </div>&ndash;&gt;
+
+                &lt;!&ndash;<img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" />&ndash;&gt;
+                <img id="profile-img" class="profile-img-card" src="../../../assets/imgHeader.jpeg" width="100%" height="400px" />
+                <p id="profile-name" class="profile-name-card"></p>
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <div class="form-group">
+                        <button class="btn btn-primary" style="margin-right: 10px;height: 20px;" ng-click="openEnvoi()"></button>
+                        <label >Envoi</label>
+                    </div>
+                    <div class="form-group" >
+                        <button class="btn btn-primary" style="margin-right: 10px;height: 20px;"ng-click="openPaiment()"></button>
+                        <label >Paiment</label>
+                    </div>
+                    <div class="form-group" >
+                        <button class="btn btn-primary" style="margin-right: 10px;height: 20px;"></button>
+                        <label >Versement</label>
+                    </div>
+                    <div class="form-group" >
+                        <button class="btn btn-primary" style="margin-right: 10px;height: 20px;"></button>
+                        <label >Remborsement</label>
+                    </div>
+                    <div class="form-group" >
+                        <button class="btn btn-primary" style="margin-right: 10px;height: 20px;"></button>
+                        <label >Solde</label>
+                    </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/app.js"></script>

@@ -1,0 +1,30 @@
+<script type="text/javascript" src="../../js/app.js"></script>
+<script type="text/javascript" src="../../js/versement.js.js"></script>
+<script type="text/javascript" src="../../angular/angular.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-animate.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-route.min.js"></script>
+<script type="text/javascript" src="../../js/ui-bootstrap-tpls-2.5.0.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<div  ng-app="index" ng-controller="serviceController" >
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Service</h3>
+    </div>
+    <div class="modal-body" id="modal-body" style="float: left">
+        <form name="" class="form-horizontal" novalidate="">
+
+            <div class="form-group">
+                <label class="col-sm-4  control-label">P Service</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="libelle" name="libelle" placeholder="Point du service"
+                           ng-model="forms.libelle" ng-required="true">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="save()">Enregister</button>
+        <button class="btn btn-danger" type="button" ng-click="cancel()">Annuller</button>
+    </div>
+
+</div>

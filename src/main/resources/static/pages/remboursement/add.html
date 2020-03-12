@@ -1,0 +1,67 @@
+<script type="text/javascript" src="../../js/app.js"></script>
+<script type="text/javascript" src="../../js/versement.js.js"></script>
+<script type="text/javascript" src="../../angular/angular.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-animate.min.js"></script>
+<script type="text/javascript" src="../../angular/angular-route.min.js"></script>
+<script type="text/javascript" src="../../js/ui-bootstrap-tpls-2.5.0.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<div  ng-app="index" ng-controller="remboursementController" ng-init="initial()">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Remboursement</h3>
+    </div>
+    <div class="modal-body" id="modal-body" style="float: left">
+        <form name="" class="form-horizontal" novalidate="">
+
+            <div class="form-group">
+                <label class="col-sm-4  control-label">P Service</label>
+                <div class="col-sm-8">
+                    <!--<input type="text" class="form-control has-error" id="name" name="name" placeholder="Venant de"
+                           ng-model="employee.name" ng-required="true">-->
+                    <select class="form-control has-error" ng-model="forms.service">
+                        <option ng-repeat="(key, service) in listService " value={{listService[key]}}> {{service.libelle}}</option>
+                    </select>
+
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="col-sm-4 control-label">Vers</label>
+                <div class="col-sm-8">
+                    <select class="form-control has-error"  ng-model="forms.vendeur">
+                        <option ng-repeat="(key, vendeur) in listVendeurs " value={{vendeur}}> {{vendeur.nomPrenom}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label" >Destinateur</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="desitinateur" name="destinateur" placeholder="Nom du destinateur" value="@{{employee.contact_number}}"
+                           ng-model="forms.destinateur" ng-required="true">
+                </div>
+            </div>
+
+            <div class="form-group" >
+                <label class="col-sm-4 control-label">Montant</label>
+                <div class="col-sm-8">
+                    <input type="number" class="form-control" id="montant" name="montant" placeholder="Montant"
+                           ng-model="forms.montant" ng-required="true">
+                </div>
+            </div>
+            <div class="form-group" >
+                <label class="col-sm-4 control-label">Commission</label>
+                <div class="col-sm-8">
+                    <input type="number" class="form-control" id="commission" name="commission" placeholder="Commission"
+                           ng-model="forms.commission" ng-required="true">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="save()">Enregister</button>
+        <button class="btn btn-danger" type="button" ng-click="cancel()">Annuller</button>
+    </div>
+
+</div>
